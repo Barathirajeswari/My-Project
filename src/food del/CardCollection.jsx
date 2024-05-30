@@ -1,4 +1,4 @@
-const Card=[
+const CARD=[
     {
         card_img_top : "",
         card_title : "Noodles",
@@ -31,4 +31,4 @@ const Card=[
     }
 
 ]
-export default Card;
+export default CARD;

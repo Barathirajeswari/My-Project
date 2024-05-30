@@ -1,16 +1,16 @@
-import Card from "./CardCollection";
+import CARD from "./CardCollection";
 import CardComp from "./CardComp";
 
 function Catelog() {
-    return ( 
+    return (
         <>
-        {
-            Card.map(()=>{
-                return<CardComp />
-            })
-        }
+            {
+                CARD.map((value) => {
+                    return <CardComp value={value} />
+                })
+            }
         </>
-     );
+    );
 }
 
 export default Catelog; 

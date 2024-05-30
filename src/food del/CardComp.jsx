@@ -1,12 +1,12 @@
-function CardComp({obj}) {
-    return ( 
+function CardComp({ value }) {
+    return (
         <>
-        <li>image :{obj.card_img_top} </li>
-        <li>title : {obj.card_title}</li>
-        <li>text : {obj.card_text} </li>
-        <li>btn :  {obj.card_btn}</li>
+            <li>image :{value.card_img_top} </li>
+            <li>title : {value.card_title}</li>
+            <li>text : {value.card_text} </li>
+            <li>btn :  {value.card_btn}</li>
         </>
-     );
+    );
 }
 
 export default CardComp;
