@@ -1,12 +1,20 @@
-function CardComp({ value }) {
+import './custom.css';
+
+function CardComp({ arr, value, setArr }) {
+    function handleClick() {
+        setArr([...arr,value.title]);
+    }
     return (
-        <>
-            <li>image :{value.card_img_top} </li>
-            <li>title : {value.card_title}</li>
-            <li>text : {value.card_text} </li>
-            <li>btn :  {value.card_btn}</li>
-        </>
+        <div className="card">
+            <div>
+                <img src={value.img_top} height={100} width={100} alt={value.title}/>
+                <h2>{value.title}</h2>
+                <p>{value.text} </p>
+                <button onClick={handleClick}>{value.btn}</button>
+            </div>
+        </div>
     );
 }
 
 export default CardComp;
+

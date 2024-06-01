@@ -1,0 +1,18 @@
+.card {
+    padding: 10px;
+    margin: 10px;
+    background-color: ghostwhite;  
+    border: 2px solid rosybrown;
+    border-bottom: 2px solid salmon;
+}
+li {
+    list-style-type: decimal-leading-zero;
+}
+.orders {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(250, 128, 114, 0.801);
+    padding: 10px;
+    margin: 20px;
+}
